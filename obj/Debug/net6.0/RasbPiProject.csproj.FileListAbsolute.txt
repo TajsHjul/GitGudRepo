@@ -1,0 +1,15 @@
+C:\Users\Tajs\RasbPiProject\bin\Debug\net6.0\RasbPiProject.exe
+C:\Users\Tajs\RasbPiProject\bin\Debug\net6.0\RasbPiProject.deps.json
+C:\Users\Tajs\RasbPiProject\bin\Debug\net6.0\RasbPiProject.runtimeconfig.json
+C:\Users\Tajs\RasbPiProject\bin\Debug\net6.0\RasbPiProject.dll
+C:\Users\Tajs\RasbPiProject\bin\Debug\net6.0\RasbPiProject.pdb
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.csproj.AssemblyReference.cache
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.AssemblyInfoInputs.cache
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.AssemblyInfo.cs
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.csproj.CoreCompileInputs.cache
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.dll
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\refint\RasbPiProject.dll
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.pdb
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\RasbPiProject.genruntimeconfig.cache
+C:\Users\Tajs\RasbPiProject\obj\Debug\net6.0\ref\RasbPiProject.dll
