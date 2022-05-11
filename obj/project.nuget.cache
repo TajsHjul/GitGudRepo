@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iJUz3NtGoxfju6PEpTi9YQdBwAmqoWy+hJR6VcO5bo46Hp7b7rgllXfdDe3Tg+WZotfrQ0Cs+lhIBrd0UUChQQ==",
+  "dgSpecHash": "ANrHVnxt18lORUEbSrezHypGnXXzJzp7RS1qNOQC6Y0FgHanF0X3HkW2MdheiyXrIE5cgenvTarxP4jhpgd2WQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tajs\\RasbPiProject\\RasbPiProject.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Tajs\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm\\6.0.4\\microsoft.netcore.app.runtime.linux-arm.6.0.4.nupkg.sha512",
-    "C:\\Users\\Tajs\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\6.0.4\\microsoft.aspnetcore.app.runtime.linux-arm.6.0.4.nupkg.sha512",
-    "C:\\Users\\Tajs\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm\\6.0.4\\microsoft.netcore.app.host.linux-arm.6.0.4.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\rulle\\Documents\\GitHub\\GitGudRepo\\RasbPiProject.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
