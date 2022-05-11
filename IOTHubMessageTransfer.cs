@@ -9,7 +9,7 @@ namespace RasbPiProject
 {
     class IOTHubMessageTransfer
     {
-        private static readonly string connectionString = "[Connnection String]";
+        private static readonly string connectionString = "HostName=Blazer.azure-devices.net;DeviceId=RaspberryPi;SharedAccessKey=3Og2iWWINkWSgIG8nQTi5msnA4jP1vFs+nVW/WChvIs=";
         private static DeviceClient deviceClient;
 
         static void MessageSender()
