@@ -5,37 +5,50 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Azure.Devices.Client;
 
+
 namespace RasbPiProject
 {
     class IOTHubMessageTransfer
     {
-        private static readonly string connectionString = "HostName=Blazer.azure-devices.net;DeviceId=RaspberryPi;SharedAccessKey=3Og2iWWINkWSgIG8nQTi5msnA4jP1vFs+nVW/WChvIs=";
+        private static readonly string connectionString = "HostName=RasPiProject.azure-devices.net;DeviceId=RasPi;SharedAccessKey=H1pSFiQ7WHUnwZrme+nnw+hqSROzBNeyGdFwejDCsJ0=";
         private static DeviceClient deviceClient;
+        public static string recievedString = "";
 
-        static void MessageSender()
+        public string ShowMessage()
+        {
+            return recievedString;
+        }
+        public void MessageSender()
         {
             deviceClient = DeviceClient.CreateFromConnectionString(connectionString);
 
             ReceiveCloudToDeviceMessageAsync();
-            SendDeviceToCloudMessageAsync();
-
+            SendDeviceToCloudMessageAsync(TestDataGen.TestDataStringGen());
+            Console.WriteLine("Message sent");
 
         }
-
-        private static async void SendDeviceToCloudMessageAsync()
+        public void MessageReciever()
         {
-            var messageString = "Random test message";
-            Message message = new Message(Encoding.ASCII.GetBytes(messageString));            
+            deviceClient = DeviceClient.CreateFromConnectionString(connectionString);
 
+            ReceiveCloudToDeviceMessageAsync();
+            Console.WriteLine("Message sent");
+        }
+
+        private static async void SendDeviceToCloudMessageAsync(string msgstring)
+        {
+            var messageString = msgstring;
+            Message message = new Message(Encoding.ASCII.GetBytes(messageString));            
+            
             await deviceClient.SendEventAsync(message);
             Console.WriteLine("Sending Message {0}", messageString);
 
         }
 
-        private static async void ReceiveCloudToDeviceMessageAsync()
+        public static async void ReceiveCloudToDeviceMessageAsync()
         {
             Console.WriteLine("Receiving Cloud to Device messages from IoT Hub");
-
+            
             while (true)
             {
                 Message receivedMessage = await deviceClient.ReceiveAsync();
@@ -45,9 +58,11 @@ namespace RasbPiProject
                     string receivedMessageString = Encoding.ASCII.GetString(receivedMessage.GetBytes());
                     Console.WriteLine("Received message: {0}", receivedMessageString);
                     await deviceClient.CompleteAsync(receivedMessage);
+                    recievedString = receivedMessageString;
                 }
-
+                
             }
+
         }
     }
 }
