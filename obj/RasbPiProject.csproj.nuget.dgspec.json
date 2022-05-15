@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tajs\\RasbPiProject\\RasbPiProject.csproj": {}
+    "C:\\Users\\Tajs\\RasbPiProject\\GitGudRepo\\RasbPiProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tajs\\RasbPiProject\\RasbPiProject.csproj": {
+    "C:\\Users\\Tajs\\RasbPiProject\\GitGudRepo\\RasbPiProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tajs\\RasbPiProject\\RasbPiProject.csproj",
+        "projectUniqueName": "C:\\Users\\Tajs\\RasbPiProject\\GitGudRepo\\RasbPiProject.csproj",
         "projectName": "RasbPiProject",
-        "projectPath": "C:\\Users\\Tajs\\RasbPiProject\\RasbPiProject.csproj",
+        "projectPath": "C:\\Users\\Tajs\\RasbPiProject\\GitGudRepo\\RasbPiProject.csproj",
         "packagesPath": "C:\\Users\\Tajs\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tajs\\RasbPiProject\\obj\\",
+        "outputPath": "C:\\Users\\Tajs\\RasbPiProject\\GitGudRepo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "Microsoft.Azure.Devices": {
+              "target": "Package",
+              "version": "[1.37.1, )"
+            },
+            "Microsoft.Azure.Devices.Client": {
+              "target": "Package",
+              "version": "[1.41.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,31 +68,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-              "version": "[6.0.4, 6.0.4]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-arm",
-              "version": "[6.0.4, 6.0.4]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.linux-arm",
-              "version": "[6.0.4, 6.0.4]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "linux-arm": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

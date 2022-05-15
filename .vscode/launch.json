@@ -29,7 +29,7 @@
             "request": "launch",
             "preLaunchTask": "RaspberryDeployWSL",
             "program": "dotnet",
-            "args": ["/home/daniarasperry/share/${workspaceFolderBasename}/${workspaceFolderBasename}.dll"],
+            "args": ["/home/daniarasperry/share/${workspaceFolderBasename}/RasbPiProject.dll"],
             "cwd": "/home/daniarasperry/share/${workspaceFolderBasename}",
             "stopAtEntry": false,
             "console": "internalConsole",
