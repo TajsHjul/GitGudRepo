@@ -22,9 +22,20 @@ namespace RasbPiProject
         {
             deviceClient = DeviceClient.CreateFromConnectionString(connectionString);
 
-            ReceiveCloudToDeviceMessageAsync();
+            
             SendDeviceToCloudMessageAsync(TestDataGen.TestDataStringGen());
             Console.WriteLine("Message sent");
+
+        }
+        public void MegaMessageSender()
+        {
+            deviceClient = DeviceClient.CreateFromConnectionString(connectionString);
+
+            for (int i = 0; i < 25; i++) 
+            {
+            SendDeviceToCloudMessageAsync(TestDataGen.TestDataStringGen());
+            Console.WriteLine("Message sent");
+            }
 
         }
         public void MessageReciever()

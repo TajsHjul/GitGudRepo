@@ -14,8 +14,8 @@ namespace RasbPiProject
         static void Main(string[] args)
         {
             IOTHubMessageTransfer Test = new IOTHubMessageTransfer();
-            Test.MessageSender();
-            //Test.MessageReciever();
+            Test.MegaMessageSender();
+            Test.MessageReciever();
             //Console.WriteLine(Test.ShowMessage());
             Console.ReadLine();
         }
